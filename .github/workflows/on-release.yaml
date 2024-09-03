@@ -33,7 +33,7 @@ jobs:
       - install
     steps:
       - name: download prepared workspace
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: workspace
       - name: restore workspace from archive
@@ -54,7 +54,7 @@ jobs:
     name: Publish bundle to NPM as package
     steps:
       - name: download prepared bundle
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: bundle
       - name: restore workspace from archive
